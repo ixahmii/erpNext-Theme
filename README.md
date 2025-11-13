@@ -11,4 +11,4 @@
 
 ### To uninstall pink_theme
 
-1. bench --site sitename uninstall-app pink_theme
+1. bench --site site1.local uninstall-app pink_theme
