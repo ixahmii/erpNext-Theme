@@ -1,0 +1,62 @@
+/* ------------------- Variables ------------------- */
+:root {
+    --main-dark: #1f140f;    /* dark background / navbar */
+    --main-light: #de2910;   /* bright red / buttons / accents */
+    --main-font-color: #ffffff; /* primary text color */
+}
+
+/* ------------------- Navbar ------------------- */
+.navbar {
+    background-color: var(--main-dark);
+}
+.navbar-light .navbar-brand {
+    color: var(--main-font-color);
+}
+#navbar-breadcrumbs a {
+    color: var(--main-font-color);
+}
+#navbar-breadcrumbs li.disabled a {
+    color: #bbb; /* slightly lighter for disabled items */
+}
+.navbar .navbar-nav .nav-link {
+    color: var(--main-font-color);
+    display: flex;
+    align-items: center;
+}
+
+/* ------------------- Search Bar ------------------- */
+#navbar-search {
+    background-color: var(--main-dark);
+    border: 1px solid var(--main-light);
+    color: var(--main-font-color);
+    height: 35px;
+}
+#navbar-search::placeholder {
+    color: #ccc;
+}
+.search-bar svg {
+    stroke: var(--main-font-color);
+}
+
+/* ------------------- Buttons ------------------- */
+.btn.btn-primary {
+    background-color: var(--main-light);
+    border-color: var(--main-light);
+    color: #fff;
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: var(--main-dark);
+    border-color: var(--main-dark);
+    box-shadow: none;
+}
+
+/* ------------------- Checkbox ------------------- */
+input[type=checkbox]:checked {
+    background-color: var(--main-light);
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 4L2.6667 5.8L7 1.2' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+}
+
+/* ------------------- Optional Text ------------------- */
+body, h1, h2, h3, h4, h5, h6, p, a {
+    color: var(--main-font-color);
+}
