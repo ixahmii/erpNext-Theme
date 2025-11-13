@@ -5,7 +5,7 @@
 
 ### To install pink_theme,
 
-1. bench get-app https://github.com/Muhammad-shaalan/pink-theme.git
+1. bench get-app https://github.com/ixahmii/erpTheme.git
 2. bench --site sitename install-app pink_theme
 3. bench clear-cache
 
